@@ -1,7 +1,7 @@
 #!/bin/bash
 #OVSPANEL.INFO OpenVPN AUTO
 MYIP=$(wget -qO- ipv4.icanhazip.com);
-OCSPANEL="lowclass-vpn.ga/.free";
+OCSPANEL="xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 clear
 cd /tmp
@@ -509,7 +509,7 @@ cat /etc/openvpn/client.conf >> /home/ocspanel/public_html/client.ovpn
 rm -rf lowclassvpn.tar.bz2
 echo ""
 echo ""
-echo "LOWCLASS VPN! INSTALL SUCCESS!!"
+echo "OCSPANEL-INFO ! INSTALL SUCCESS!!"
 echo ""
 fi
 sed -i '$ i\echo 1 > /proc/sys/net/ipv4/ip_forward' /etc/rc.local
