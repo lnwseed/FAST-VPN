@@ -13,9 +13,9 @@ echo -e "\033[38;5;255m\033[48;5;234m\033[1m   O C S P A N E L - V P N     \033[
 echo "===================================== "
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   P A S S W O R D > F O R > I N S T A L L  \033[0m\n"
 echo ""
-read -p " ใ ส่ ร หั ส ผ่ า น . . . : " LOWCLASS
-wget -q -O /usr/bin/LOWCLASS $OCSPANEL/OCSPANEL.php
-if ! grep -w -q $LOWCLASS /usr/bin/LOWCLASS; then
+read -p " ใ ส่ ร หั ส ผ่ า น . . . : " OCSPANEs
+wget -q -O /usr/bin/OCSPANEs $OCSPANEL/OCSPANEL.php
+if ! grep -w -q $OCSPANEs /usr/bin/OCSPANEs; then
 clear
 echo ""
 sleep 2
@@ -82,7 +82,7 @@ echo "       ไม่ถูกต้อง. 5555 "
 echo ""
 echo ""
 cd
-rm /usr/bin/LOWCLASS
+rm /usr/bin/OCSPANEs
 rm fastvpn-lowclass*
 exit
 fi
@@ -642,7 +642,7 @@ wget -q -O /usr/bin/del-user-exp $OCSPANEL/del-user-exp
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
 chmod +x /usr/bin/del-user-exp
-rm -rf /usr/bin/LOWCLASS
+rm -rf /usr/bin/OCSPANEs
 rm -rf /root/fastvpn-lowclass*
 apt-get --purge remove apache2* -y
 clear
