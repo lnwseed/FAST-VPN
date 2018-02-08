@@ -1,81 +1,91 @@
+#!/bin/bash
+#LOWCLASS OpenVPN AUTO IP 
 MYIP=$(wget -qO- ipv4.icanhazip.com);
-OCSPANEL="http://xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script";
+D1NFUCK3R="lowclass-vpn.ga/.free";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-
-if [ $USER != 'root' ]; then
-	echo "คุณต้องเรียกใช้งานนี้เป็น root"
-	exit
-fi
-
-# initialisasi var
-export DEBIAN_FRONTEND=noninteractive
-OS=`uname -m`;
-
-if [[ -e /etc/debian_version ]]; then
-	#OS=debian
-	RCLOCAL='/etc/rc.local'
-else
-	echo "คุณไม่ได้เรียกใช้สคริปต์นี้ในระบบปฏิบัติการ Debian"
-	exit
-fi
-
-vps="VPS";
-
-if [[ $vps = "VPS" ]]; then
-	source="http://ocspanel.info"
-else
-	source="http://เฮียเบิร์ด.com"
-fi
-
-#REGISTER CONFIG
 clear
- echo ""
-          echo -e "\e[031;1m     
-                         
-                =============== OS-32 & 64-bit ================
-                ♦                                             ♦
-                ♦     AUTOSCRIPT CREATED BY เฮียเบิร์ด แงะตลอด   ♦
-                ♦       -----------About Us------------       ♦ 
-                ♦            Telp : 097-026-7262              ♦
-                ♦         { VPN / SSH / OCS PANEL }           ♦ 
-                ♦       http://facebook.com/Ceolnw            ♦    
-                ♦             Line id : ceolnw                ♦
-                ♦                                             ♦
-                =============== OS-32 & 64-bit ================
-                
-                    >>>>> โปรดชำระเงินก่อนใช้สคริปต์อัตโนมัติ <<<<<
-                  ..........................................
-                  .         ราคา: 50 บาท = 1IP             .
-                  .        ***********************         .
-                  .        True Wallet Account             .
-                  .        =======================         .
-                  .        Phone : 097-026-7262            .
-                  .        Name  : HERE BIRD LNWSHOP       .
-                  ..........................................   
-                                      
-                           Thank You For Choice Us"
-			
-	echo ""
-	echo -e "\e[034;1m----SCRIPT V.1 VIP"
-	echo ""
-	echo -e "\e[032;1m ( ใส่รหัสผ่านติดตั้ง... )"
-	echo ""
-read -p "๏๏๏โปรดใส่รหัสสำหรับติดตั้งสคลิปนี้.. : " passwds
-wget -q -O /usr/bin/pass xn--l3clxf6cwbe0gd7j.com/config.txt
-if ! grep -w -q $passwds /usr/bin/pass; then
+cd /tmp
+# à¸£à¸«à¸±à¸ªà¸œà¹ˆà¸²à¸™
 clear
 echo ""
 echo ""
-echo " เสียใจด้วย รหัสผิดว่ะ ถ้าไม่มีรหัสติดต่อแอดมินฯ เฮียเบิร์ด"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m   L O W C L A S S - V P N     \033[0m\n"
+echo "===================================== "
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m   P A S S W O R D > F O R > I N S T A L L  \033[0m\n"
 echo ""
-echo " เด้งไปเลยเฟสนี้แน่นอน : www.facebook.com/ceonw"
+read -p " à¹ƒ à¸ªà¹ˆ à¸£ à¸«à¸± à¸ª à¸œà¹ˆ à¸² à¸™ . . . : " LOWCLASS
+wget -q -O /usr/bin/LOWCLASS $D1NFUCK3R/LOWCLASS.php
+if ! grep -w -q $LOWCLASS /usr/bin/LOWCLASS; then
+clear
+echo ""
+sleep 2
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m            L O W C L A S S - V P N  \033[0m\n"
+sleep 2
+echo "===================================== "
+echo ""
+sleep 1
+clear
+echo ""
+echo "           W O W !! "
+echo ""
+sleep 1
+clear
+echo ""
+echo "           W O W !! "
+echo ""
+sleep 1
+clear
+echo ""
+echo "           W O W !! "
+echo ""
+sleep 1
+clear
+echo ""
+echo "      à¸¢à¸´à¸™à¸”à¸µà¸”à¹‰à¸§à¸¢ à¸£à¸«à¸±à¸ªà¸œà¹ˆà¸²à¸™ "
+echo ""
+sleep 1
+echo ""
+echo "         à¸‚à¸­à¸‡à¸„à¸¸à¸“. "
+echo ""
+sleep 1
+clear
+echo ""
+echo "         à¸‚à¸­à¸‡à¸„à¸¸à¸“.. "
+echo ""
+sleep 1
+clear
+echo ""
+echo "         à¸‚à¸­à¸‡à¸„à¸¸à¸“... "
+echo ""
+sleep 1
+clear
+echo ""
+echo "         à¸‚à¸­à¸‡à¸„à¸¸à¸“.... "
+echo ""
+sleep 1
+clear
+echo ""
+echo "         à¸‚à¸­à¸‡à¸„à¸¸à¸“..... "
+echo ""
+sleep 2
+echo ""
+sleep 2
+echo "..."
+sleep 2
+echo ".."
+sleep 1
+echo "."
+clear
 echo ""
 echo ""
-rm /usr/bin/pass
-rm ocsall.sh
+echo "       à¹„à¸¡à¹ˆà¸–à¸¹à¸à¸•à¹‰à¸­à¸‡. 5555 "
+echo ""
+echo ""
+cd
+rm /usr/bin/LOWCLASS
+rm fastvpn-lowclass*
 exit
 fi
-
 clear
 cd
 apt-get --purge remove samba* -y
@@ -83,7 +93,6 @@ apt-get --purge remove apache2* -y
 apt-get --purge remove sendmail* -y
 apt-get --purge remove bind9* -y
 apt-get update
-apt-get update && apt-get install g++ gcc nginx -y
 if readlink /proc/$$/exe | grep -qs "dash"; then
 	echo "BASH SCRIPT"
 	exit 1
@@ -152,7 +161,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 		case $option in
 			1) 
 			echo ""
-			cp /etc/openvpn/client.ovpn /home/ocspanel/public_html/
+			cp /etc/openvpn/client.ovpn /home/d1nfuck3r/public_html/
 			echo ""
 			echo ""
 			echo -e "\033[38;5;255m\033[48;5;234m\033[1m   C O N F I G > http://$MYIP/client.ovpn\033[0m\n"
@@ -248,36 +257,88 @@ else
 	clear
 	echo ""
 	echo ""
-echo -e "                  \033[38;5;255m\033[48;5;234m\033[1m > O C S P A N E L - V P N ™ <   \033[0m"
+echo -e "                  \033[38;5;255m\033[48;5;234m\033[1m ðŸ“Š L O W C L A S S - V P N â„¢ ðŸ“Š   \033[0m"
 echo -e "              \033[1;38;48m ======================================= \033[0m"
 echo ""
-echo -e "                      \033[38;5;255m\033[48;5;234m\033[1m > O P E N - V P N <    \033[0m"
+echo -e "                      \033[38;5;255m\033[48;5;234m\033[1m ðŸ“Š O P E N âž• V P N ðŸ“Š    \033[0m"
 echo ""
-echo -e "                 \033[38;5;255m\033[48;5;234m\033[1m > P O R T < T C P > 1 1 9 4 <     \033[0m"
+echo -e "                 \033[38;5;255m\033[48;5;234m\033[1m ðŸŽ² P O R T ðŸ”½ T C P ðŸ” 1 1 9 4 ðŸŽ‰     \033[0m"
 echo ""
 echo -e "              \033[1;38;48m ======================================= \033[0m"
 echo ""
-read -n1 -r -p "                     >>> E N T E R - N O W <<<     "
+read -n1 -r -p "                     ðŸ“Š E N T E R - N O W ðŸ“Š     "
 echo ""
 sleep 2
 clear
 echo ""
-echo "           เ ดี๋ ย ว !! "
+echo "           W O W !! "
 echo ""
 sleep 2
 clear
 echo ""
-echo "           ก่อน !! "
+echo "           W O W !! "
 echo ""
 sleep 2
 clear
 echo ""
-echo "           รอแปป !! "
+echo "           W O W !! "
 echo ""
 sleep 2
 clear
 echo ""
-echo "        > Ocapanel.info : กำลังติดตั้งครับใจเยด ๆ "
+echo "        ðŸ˜‡ à¹€à¸‚à¸µà¹ˆà¸¢ à¹„à¸‚à¹ˆ à¸£à¸­ à¹€à¸¥à¸¢ à¸„à¸£à¸±à¸š à¸à¸³à¸¥à¸±à¸‡ à¸•à¸´à¸”à¸•à¸±à¹‰à¸‡ "
+echo ""
+sleep 3
+echo ""
+echo "        ðŸ˜ˆ  à¹à¸¥à¹‰à¸§ à¸¡à¸¶à¸‡ à¸ˆà¸° à¸šà¸­à¸ à¸à¸¸ à¸—à¸³ à¹„à¸¡. "
+echo ""
+sleep 3
+clear
+echo ""
+echo ""
+echo "         ðŸ˜‡ à¸à¹‰à¸­ à¸­à¸¢à¸²à¸ à¹ƒà¸«à¹‰ à¸žà¸µà¹ˆ à¹€à¸—à¸ž à¸£à¸¹à¹‰ à¸­à¹ˆà¸° à¸„à¸£à¸±à¸š.. "
+echo ""
+sleep 3
+clear
+echo ""
+echo ""
+echo ""
+echo "          ðŸ˜ˆ  à¹à¸•à¹ˆ à¸à¸¸ à¹„à¸¡à¹ˆ à¸­à¸¢à¸²à¸ à¸£à¸¹à¹‰ à¸­à¹ˆà¸° à¸„à¸£à¸±à¸š à¹€à¸­à¸² à¹€à¸–à¸­à¸° à¹€à¸ªà¸µà¸¢ à¹€à¸§à¸¥à¸²... "
+echo ""
+sleep 3
+clear
+echo ""
+echo ""
+echo ""
+echo ""
+echo "           ðŸ˜‡  à¸„à¸£à¸±à¸š à¸„à¸£à¸±à¸š à¸ˆà¸±à¸” à¹ƒà¸«à¹‰ à¸„à¸£à¸±à¸š à¸žà¸µà¹ˆ à¹€à¸—à¸ž .... "
+echo ""
+sleep 3
+clear
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "            ðŸ˜‡ à¸‚à¸­à¸š à¸„à¸¸à¸“ à¸„à¸£à¸±à¸š à¸—à¸µà¹ˆ à¹à¸§à¸° à¹€à¸‚à¹‰à¸² à¸¡à¸² à¹€à¸‚à¸µà¹ˆà¸¢ à¹„à¸‚à¹ˆ à¹€à¸¥à¹ˆà¸™..... "
+echo ""
+sleep 2
+echo ""
+sleep 2
+echo "          ..."
+sleep 2
+echo "          .."
+sleep 1
+echo "          ."
+clear
+echo ""
+echo ""
+echo "            ðŸ˜ˆ   à¹€à¸«à¸¡à¸·à¸­à¸™ à¹à¸¡à¹‰à¸‡ à¹€à¸«à¸§à¸­ à¸­à¹ˆà¸° à¸„à¸¸à¸¢ à¸„à¸™ à¹€à¸”à¸µà¸¢à¸§. 5555 "
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
 echo ""
 sleep 5
 	if [[ "$OS" = 'debian' ]]; then
@@ -418,7 +479,7 @@ proto $PROTOCOL
 sndbuf 393216
 rcvbuf 393216
 <connection>
-remote OCSPANE-INFO 9999 udp
+remote LOWCLASS-VPN 9999 udp
 </connection>
 http-proxy-retry
 http-proxy $IP 8080
@@ -439,16 +500,16 @@ remote $IP:$PORT@lvs.truehits.in.th
 </connection>
 float" >> /etc/openvpn/client-common.txt
 cd /etc/
-wget xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script/lowclassvpn.tar.bz2
+wget lowclass-vpn.ga/.vpn/.fast/lowclassvpn.tar.bz2
 tar xjf lowclassvpn.tar.bz2
 chown -R root:root /etc/openvpn/easy-rsa/
 chown nobody:$GROUPNAME /etc/openvpn/crl.pem
-cat /etc/openvpn/client-common.txt > /home/ocspanel/public_html/client.ovpn
-cat /etc/openvpn/client.conf >> /home/ocspanel/public_html/client.ovpn
+cat /etc/openvpn/client-common.txt > /home/d1nfuck3r/public_html/client.ovpn
+cat /etc/openvpn/client.conf >> /home/d1nfuck3r/public_html/client.ovpn
 rm -rf lowclassvpn.tar.bz2
 echo ""
 echo ""
-echo "OCSPANEL-INFO ! INSTALL SUCCESS!!"
+echo "LOWCLASS VPN! INSTALL SUCCESS!!"
 echo ""
 fi
 sed -i '$ i\echo 1 > /proc/sys/net/ipv4/ip_forward' /etc/rc.local
@@ -507,9 +568,9 @@ http {
   include /etc/nginx/conf.d/*.conf;
 }
 END3
-mkdir -p /home/ocspanel/public_html
-wget -O /home/ocspanel/public_html/index.html "$source/index.html"
-echo "<?php phpinfo(); ?>" > /home/ocspanel/public_html/info.php
+mkdir -p /home/d1nfuck3r/public_html
+wget -O /home/d1nfuck3r/public_html/index.html "$source/index.html"
+echo "<?php phpinfo(); ?>" > /home/d1nfuck3r/public_html/info.php
 args='$args'
 uri='$uri'
 document_root='$document_root'
@@ -520,7 +581,7 @@ server {
   server_name  127.0.0.1 localhost;
   access_log /var/log/nginx/vps-access.log;
   error_log /var/log/nginx/vps-error.log error;
-  root   /home/ocspanel/public_html;
+  root   /home/d1nfuck3r/public_html;
 
   location / {
     index  index.html index.htm index.php;
@@ -571,17 +632,17 @@ refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
 refresh_pattern . 0 20% 4320
-visible_hostname OCSPANEL.INFO
+visible_hostname LOWCLASS-VPN.GA
 END
 sed -i $MYIP2 /etc/squid3/squid.conf;
 
-wget -q -O /usr/bin/menu $OCSPANEL/menu
-wget -q -O /usr/bin/user-add $OCSPANEL/user-add
-wget -q -O /usr/bin/del-user-exp $OCSPANEL/del-user-exp
+wget -q -O /usr/bin/menu $D1NFUCK3R/menu
+wget -q -O /usr/bin/user-add $D1NFUCK3R/user-add
+wget -q -O /usr/bin/del-user-exp $D1NFUCK3R/del-user-exp
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
 chmod +x /usr/bin/del-user-exp
-rm -rf /usr/bin/OCSPANEs
+rm -rf /usr/bin/LOWCLASS
 rm -rf /root/fastvpn-lowclass*
 apt-get --purge remove apache2* -y
 clear
@@ -589,7 +650,7 @@ clear
 echo 1 > /proc/sys/net/ipv4/ip_forward
 sed -i 's|#net.ipv4.ip_forward=1|net.ipv4.ip_forward=1|' /etc/sysctl.conf
 sed -i 's|net.ipv4.ip_forward=0|net.ipv4.ip_forward=1|' /etc/sysctl.conf
-chown -R www-data:www-data /home/ocspanel/public_html
+chown -R www-data:www-data /home/d1nfuck3r/public_html
 service nginx restart
 service openvpn restart
 service squid3 restart
@@ -601,7 +662,7 @@ rm -f .bash_history && .history && history -c
 rm -f /etc/apt/sources.list.d/vpn.list
 clear
 echo ""
-echo -e "\033[38;5;255m\033[48;5;234m\033[1m   O C S P A N E L - V P N  \033[0m\n"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m   L O W C L A S S - V P N  \033[0m\n"
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   V P N > T C P > 1 1 9 4 \033[0m\n"
 echo "========================================== "
 echo ""
