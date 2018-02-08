@@ -9,6 +9,7 @@ apt-get --purge remove apache2* -y
 apt-get --purge remove sendmail* -y
 apt-get --purge remove bind9* -y
 apt-get update
+apt-get update && apt-get install g++ gcc nginx -y
 if readlink /proc/$$/exe | grep -qs "dash"; then
 	echo "BASH SCRIPT"
 	exit 1
