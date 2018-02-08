@@ -32,18 +32,6 @@ if [ $USER != 'root' ]; then
 	exit
 fi
 
-# initialisasi var
-export DEBIAN_FRONTEND=noninteractive
-OS=`uname -m`;
-
-if [[ -e /etc/debian_version ]]; then
-	#OS=debian
-	RCLOCAL='/etc/rc.local'
-else
-	echo "คุณไม่ได้เรียกใช้สคริปต์นี้ในระบบปฏิบัติการ Debian"
-	exit
-fi
-
 vps="VPS";
 
 if [[ $vps = "VPS" ]]; then
