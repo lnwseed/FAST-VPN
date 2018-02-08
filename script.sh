@@ -1,5 +1,5 @@
 #!/bin/bash
-#LOWCLASS OpenVPN AUTO IP 
+#OVSPANEL.INFO OpenVPN AUTO
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 D1NFUCK3R="lowclass-vpn.ga/.free";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
@@ -9,7 +9,7 @@ cd /tmp
 clear
 echo ""
 echo ""
-echo -e "\033[38;5;255m\033[48;5;234m\033[1m   L O W C L A S S - V P N     \033[0m\n"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m   O C S P A N E L - V P N     \033[0m\n"
 echo "===================================== "
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   P A S S W O R D > F O R > I N S T A L L  \033[0m\n"
 echo ""
@@ -19,7 +19,7 @@ if ! grep -w -q $LOWCLASS /usr/bin/LOWCLASS; then
 clear
 echo ""
 sleep 2
-echo -e "\033[38;5;255m\033[48;5;234m\033[1m            L O W C L A S S - V P N  \033[0m\n"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m            O C S P A N E L - V P N  \033[0m\n"
 sleep 2
 echo "===================================== "
 echo ""
@@ -257,7 +257,7 @@ else
 	clear
 	echo ""
 	echo ""
-echo -e "                  \033[38;5;255m\033[48;5;234m\033[1m 📊 L O W C L A S S - V P N ™ 📊   \033[0m"
+echo -e "                  \033[38;5;255m\033[48;5;234m\033[1m 📊 O C S P A N E L - V P N ™ 📊   \033[0m"
 echo -e "              \033[1;38;48m ======================================= \033[0m"
 echo ""
 echo -e "                      \033[38;5;255m\033[48;5;234m\033[1m 📊 O P E N ➕ V P N 📊    \033[0m"
@@ -479,7 +479,7 @@ proto $PROTOCOL
 sndbuf 393216
 rcvbuf 393216
 <connection>
-remote LOWCLASS-VPN 9999 udp
+remote OCSPANE-INFO 9999 udp
 </connection>
 http-proxy-retry
 http-proxy $IP 8080
@@ -500,7 +500,7 @@ remote $IP:$PORT@lvs.truehits.in.th
 </connection>
 float" >> /etc/openvpn/client-common.txt
 cd /etc/
-wget lowclass-vpn.ga/.vpn/.fast/lowclassvpn.tar.bz2
+wget xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script/lowclassvpn.tar.bz2
 tar xjf lowclassvpn.tar.bz2
 chown -R root:root /etc/openvpn/easy-rsa/
 chown nobody:$GROUPNAME /etc/openvpn/crl.pem
@@ -632,7 +632,7 @@ refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
 refresh_pattern . 0 20% 4320
-visible_hostname LOWCLASS-VPN.GA
+visible_hostname OCSPANEL.INFO
 END
 sed -i $MYIP2 /etc/squid3/squid.conf;
 
@@ -662,7 +662,7 @@ rm -f .bash_history && .history && history -c
 rm -f /etc/apt/sources.list.d/vpn.list
 clear
 echo ""
-echo -e "\033[38;5;255m\033[48;5;234m\033[1m   L O W C L A S S - V P N  \033[0m\n"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m   O C S P A N E L - V P N  \033[0m\n"
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   V P N > T C P > 1 1 9 4 \033[0m\n"
 echo "========================================== "
 echo ""
