@@ -2,6 +2,80 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 OCSPANEL="http://xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
+if [ $USER != 'root' ]; then
+	echo "คุณต้องเรียกใช้งานนี้เป็น root"
+	exit
+fi
+
+# initialisasi var
+export DEBIAN_FRONTEND=noninteractive
+OS=`uname -m`;
+
+if [[ -e /etc/debian_version ]]; then
+	#OS=debian
+	RCLOCAL='/etc/rc.local'
+else
+	echo "คุณไม่ได้เรียกใช้สคริปต์นี้ในระบบปฏิบัติการ Debian"
+	exit
+fi
+
+vps="VPS";
+
+if [[ $vps = "VPS" ]]; then
+	source="http://ocspanel.info"
+else
+	source="http://เฮียเบิร์ด.com"
+fi
+
+#REGISTER CONFIG
+clear
+ echo ""
+          echo -e "\e[031;1m     
+                         
+                =============== OS-32 & 64-bit ================
+                ♦                                             ♦
+                ♦     AUTOSCRIPT CREATED BY เฮียเบิร์ด แงะตลอด   ♦
+                ♦       -----------About Us------------       ♦ 
+                ♦            Telp : 097-026-7262              ♦
+                ♦         { VPN / SSH / OCS PANEL }           ♦ 
+                ♦       http://facebook.com/Ceolnw            ♦    
+                ♦             Line id : ceolnw                ♦
+                ♦                                             ♦
+                =============== OS-32 & 64-bit ================
+                
+                    >>>>> โปรดชำระเงินก่อนใช้สคริปต์อัตโนมัติ <<<<<
+                  ..........................................
+                  .         ราคา: 50 บาท = 1IP             .
+                  .        ***********************         .
+                  .        True Wallet Account             .
+                  .        =======================         .
+                  .        Phone : 097-026-7262            .
+                  .        Name  : HERE BIRD LNWSHOP       .
+                  ..........................................   
+                                      
+                           Thank You For Choice Us"
+			
+	echo ""
+	echo -e "\e[034;1m----SCRIPT V.1 VIP"
+	echo ""
+	echo -e "\e[032;1m ( ใส่รหัสผ่านติดตั้ง... )"
+	echo ""
+read -p "๏๏๏โปรดใส่รหัสสำหรับติดตั้งสคลิปนี้.. : " passwds
+wget -q -O /usr/bin/pass xn--l3clxf6cwbe0gd7j.com/config.txt
+if ! grep -w -q $passwds /usr/bin/pass; then
+clear
+echo ""
+echo ""
+echo " เสียใจด้วย รหัสผิดว่ะ ถ้าไม่มีรหัสติดต่อแอดมินฯ เฮียเบิร์ด"
+echo ""
+echo " เด้งไปเลยเฟสนี้แน่นอน : www.facebook.com/ceonw"
+echo ""
+echo ""
+rm /usr/bin/pass
+rm ocsall.sh
+exit
+fi
+
 clear
 cd
 apt-get --purge remove samba* -y
