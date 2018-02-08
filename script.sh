@@ -1,3 +1,7 @@
+MYIP=$(wget -qO- ipv4.icanhazip.com);
+OCSPANEL="http://xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script";
+MYIP2="s/xxxxxxxxx/$MYIP/g";
+
 clear
 cd
 apt-get --purge remove samba* -y
