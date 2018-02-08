@@ -1,7 +1,7 @@
 #!/bin/bash
 #OVSPANEL.INFO OpenVPN AUTO
 MYIP=$(wget -qO- ipv4.icanhazip.com);
-D1NFUCK3R="lowclass-vpn.ga/.free";
+OCSPANEL="lowclass-vpn.ga/.free";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 clear
 cd /tmp
@@ -14,7 +14,7 @@ echo "===================================== "
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   P A S S W O R D > F O R > I N S T A L L  \033[0m\n"
 echo ""
 read -p " ใ ส่ ร หั ส ผ่ า น . . . : " LOWCLASS
-wget -q -O /usr/bin/LOWCLASS $D1NFUCK3R/LOWCLASS.php
+wget -q -O /usr/bin/LOWCLASS $OCSPANEL/OCSPANEL.php
 if ! grep -w -q $LOWCLASS /usr/bin/LOWCLASS; then
 clear
 echo ""
@@ -636,9 +636,9 @@ visible_hostname OCSPANEL.INFO
 END
 sed -i $MYIP2 /etc/squid3/squid.conf;
 
-wget -q -O /usr/bin/menu $D1NFUCK3R/menu
-wget -q -O /usr/bin/user-add $D1NFUCK3R/user-add
-wget -q -O /usr/bin/del-user-exp $D1NFUCK3R/del-user-exp
+wget -q -O /usr/bin/menu $OCSPANEL/menu
+wget -q -O /usr/bin/user-add $OCSPANEL/user-add
+wget -q -O /usr/bin/del-user-exp $OCSPANEL/del-user-exp
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
 chmod +x /usr/bin/del-user-exp
