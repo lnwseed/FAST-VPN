@@ -267,7 +267,7 @@ echo ""
 sleep 2
 clear
 echo ""
-echo "           เ ดี๋ ย ว !! "
+echo "           ก่อน !! "
 echo ""
 sleep 2
 clear
