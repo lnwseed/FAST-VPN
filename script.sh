@@ -293,6 +293,7 @@ echo "          ..."
 sleep 2
 echo "          .."
 sleep 1
+clear
 echo "          มันขึ้นไรมาก็ตอบ Y เยดดดนะ !!!"
 sleep 3
 clear
