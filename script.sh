@@ -779,7 +779,7 @@ rm -f .bash_history && .history && history -c
 rm -f /etc/apt/sources.list.d/vpn.list
 clear
 echo ""
-echo -e "\033[38;5;255m\033[48;5;234m\033[1m   L O W C L A S S - V P N  \033[0m\n"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m   O C S P A N E L - V P N  \033[0m\n"
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   V P N > T C P > 1 1 9 4 \033[0m\n"
 echo "========================================== "
 echo ""
