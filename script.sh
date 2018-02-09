@@ -774,7 +774,6 @@ service squid3 restart
 
 #ok
 clear
-cd
 rm -f .bash_history && .history && history -c
 rm -f /etc/apt/sources.list.d/vpn.list
 clear
