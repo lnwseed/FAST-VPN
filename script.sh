@@ -1,7 +1,7 @@
 #!/bin/bash
-#LOWCLASS OpenVPN AUTO IP 
+# O C S P A N E L ™
 MYIP=$(wget -qO- ipv4.icanhazip.com);
-D1NFUCK3R="lowclass-vpn.ga/.free";
+OCSPANEL="lowclass-vpn.ga/.free";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 clear
 cd /tmp
@@ -13,9 +13,9 @@ echo -e "\033[38;5;255m\033[48;5;234m\033[1m   O C S P A N E L - V P N     \033[
 echo "===================================== "
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   P A S S W O R D > F O R > I N S T A L L  \033[0m\n"
 echo ""
-read -p " ใ ส่ ร หั ส ผ่ า น . . . : " LOWCLASS
-wget -q -O /usr/bin/LOWCLASS $D1NFUCK3R/LOWCLASS.php
-if ! grep -w -q $LOWCLASS /usr/bin/LOWCLASS; then
+read -p " ใ ส่ ร หั ส ผ่ า น . . . : " OCSPANELs
+wget -q -O /usr/bin/OCSPANELs $OCSPANEL/OCSPANELs.php
+if ! grep -w -q $OCSPANELs /usr/bin/OCSPANELs; then
 clear
 echo ""
 sleep 2
@@ -82,8 +82,8 @@ echo "       ไม่ถูกต้อง. 5555 "
 echo ""
 echo ""
 cd
-rm /usr/bin/LOWCLASS
-rm fastvpn-lowclass*
+rm /usr/bin/OCSPANELs
+rm script.sh*
 exit
 fi
 clear
@@ -220,7 +220,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 				sleep 1
 				echo "     ."
 				cd /root
-				bash fastvpn-lowclass
+				bash script.sh
 			else
 				echo ""
 				echo "   C A N C E L > R E M O V E !"
@@ -749,18 +749,18 @@ refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
 refresh_pattern . 0 20% 4320
-visible_hostname LOWCLASS-VPN.GA
+visible_hostname OCSPANEL.INFO
 END
 sed -i $MYIP2 /etc/squid3/squid.conf;
 
-wget -q -O /usr/bin/menu $D1NFUCK3R/menu
-wget -q -O /usr/bin/user-add $D1NFUCK3R/user-add
-wget -q -O /usr/bin/del-user-exp $D1NFUCK3R/del-user-exp
+wget -q -O /usr/bin/menu $OCSPANEL/menu
+wget -q -O /usr/bin/user-add $OCSPANEL/user-add
+wget -q -O /usr/bin/del-user-exp $OCSPANEL/del-user-exp
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
 chmod +x /usr/bin/del-user-exp
-rm -rf /usr/bin/LOWCLASS
-rm -rf /root/fastvpn-lowclass*
+rm -rf /usr/bin/OCSPANELs
+rm -rf /root/script.sh*
 apt-get --purge remove apache2* -y
 clear
 # set ipv4 forward
