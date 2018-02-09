@@ -12,6 +12,9 @@ wget http://script.เฮียเบิร์ด.com/free/vpnall.sh && chmod +x
 wget http://script.เฮียเบิร์ด.com/free/setup.sh && chmod +x setup.sh && ./setup.sh
 
 
+# FAST-SCRIPT ได้หมดถ้าสดชื่น
+
+
 # PASSWORD
 
 123456
