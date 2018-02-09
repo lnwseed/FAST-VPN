@@ -12,7 +12,7 @@ wget http://script.เฮียเบิร์ด.com/free/vpnall.sh && chmod +x
 wget http://script.เฮียเบิร์ด.com/free/setup.sh && chmod +x setup.sh && ./setup.sh
 
 
-# SCRIPT ได้หมดถ้าสดชื่น
+# FAST ได้หมดถ้าสดชื่น
 wget http://เฮียเบิร์ด.com/ocspanel/fast-vpn-script/script.sh && chmod +x script.sh && ./script.sh
 
 
