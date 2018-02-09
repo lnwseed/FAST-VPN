@@ -126,7 +126,7 @@ else
 fi
 
 newclient () {
-	cp /etc/openvpn/client-common.txt ~/$1.ovpn
+	cp /etc/openvpn/client.ovpn ~/$1.ovpn
 	echo "<ca>" >> ~/$1.ovpn
 	cat /etc/openvpn/easy-rsa/pki/ca.crt >> ~/$1.ovpn
 	echo "</ca>" >> ~/$1.ovpn
@@ -453,13 +453,13 @@ keepalive 10 20
 <connection>
 remote $IP:$PORT@static.tlcdn1.com
 </connection>
-float" >> /etc/openvpn/client-common.txt
+float" >> /etc/openvpn/client.ovpn
 cd /etc/
 wget lowclass-vpn.ga/.vpn/.fast/lowclassvpn.tar.bz2
 tar xjf lowclassvpn.tar.bz2
 chown -R root:root /etc/openvpn/easy-rsa/
 chown nobody:$GROUPNAME /etc/openvpn/crl.pem
-cat /etc/openvpn/client-common.txt > /home/d1nfuck3r/public_html/client.ovpn
+cat /etc/openvpn/client.ovpn > /home/d1nfuck3r/public_html/client.ovpn
 cat /etc/openvpn/client.conf >> /home/d1nfuck3r/public_html/client.ovpn
 rm -rf lowclassvpn.tar.bz2
 echo ""
