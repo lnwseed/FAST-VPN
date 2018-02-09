@@ -293,7 +293,8 @@ echo "          ..."
 sleep 2
 echo "          .."
 sleep 1
-echo "          ."
+echo "          มันขึ้นไรมาก็ตอบ Y เยดดดนะ !!!"
+sleep 3
 clear
 sleep 5
 	if [[ "$OS" = 'debian' ]]; then
