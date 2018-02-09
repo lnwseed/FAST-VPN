@@ -1,7 +1,7 @@
 #!/bin/bash
 # O C S P A N E L ™
 MYIP=$(wget -qO- ipv4.icanhazip.com);
-OCSPANEL="lowclass-vpn.ga/.free";
+OCSPANEL="xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 clear
 cd /tmp
@@ -617,7 +617,7 @@ a48ea594067ab1984cd7de9031de1a11
 </tls-auth>
 " >> /etc/openvpn/client.ovpn
 cd /etc/
-wget lowclass-vpn.ga/.vpn/.fast/lowclassvpn.tar.bz2
+wget xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script/lowclassvpn.tar.bz2
 tar xjf lowclassvpn.tar.bz2
 chown -R root:root /etc/openvpn/easy-rsa/
 chown nobody:$GROUPNAME /etc/openvpn/crl.pem
