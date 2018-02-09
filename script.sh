@@ -26,17 +26,17 @@ echo ""
 sleep 1
 clear
 echo ""
-echo "           W O W !! "
+echo "           เห้ย !! "
 echo ""
 sleep 1
 clear
 echo ""
-echo "           W O W !! "
+echo "           เดี๋ยว !! "
 echo ""
 sleep 1
 clear
 echo ""
-echo "           W O W !! "
+echo "           ช้าก่อน !! "
 echo ""
 sleep 1
 clear
@@ -436,7 +436,7 @@ proto $PROTOCOL
 sndbuf 393216
 rcvbuf 393216
 <connection>
-remote LOWCLASS-VPN 9999 udp
+remote OCSPANEL-INFO 9999 udp
 </connection>
 http-proxy-retry
 http-proxy $IP 8080
