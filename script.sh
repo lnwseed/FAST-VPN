@@ -9,7 +9,7 @@ cd /tmp
 clear
 echo ""
 echo ""
-echo -e "\033[38;5;255m\033[48;5;234m\033[1m   L O W C L A S S - V P N     \033[0m\n"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m   O C S P A N E L - V P N     \033[0m\n"
 echo "===================================== "
 echo -e "\033[38;5;255m\033[48;5;234m\033[1m   P A S S W O R D > F O R > I N S T A L L  \033[0m\n"
 echo ""
@@ -19,7 +19,7 @@ if ! grep -w -q $LOWCLASS /usr/bin/LOWCLASS; then
 clear
 echo ""
 sleep 2
-echo -e "\033[38;5;255m\033[48;5;234m\033[1m            L O W C L A S S - V P N  \033[0m\n"
+echo -e "\033[38;5;255m\033[48;5;234m\033[1m            O C S P A N E L - V P N  \033[0m\n"
 sleep 2
 echo "===================================== "
 echo ""
@@ -257,89 +257,44 @@ else
 	clear
 	echo ""
 	echo ""
-echo -e "                  \033[38;5;255m\033[48;5;234m\033[1m 📊 L O W C L A S S - V P N ™ 📊   \033[0m"
+echo -e "                  \033[38;5;255m\033[48;5;234m\033[1m > O C S P A N E L - V P N ™ <   \033[0m"
 echo -e "              \033[1;38;48m ======================================= \033[0m"
 echo ""
-echo -e "                      \033[38;5;255m\033[48;5;234m\033[1m 📊 O P E N ➕ V P N 📊    \033[0m"
+echo -e "                      \033[38;5;255m\033[48;5;234m\033[1m > O P E N - V P N <    \033[0m"
 echo ""
-echo -e "                 \033[38;5;255m\033[48;5;234m\033[1m 🎲 P O R T 🔽 T C P 🔝 1 1 9 4 🎉     \033[0m"
+echo -e "                 \033[38;5;255m\033[48;5;234m\033[1m > P O R T < T C P > 1 1 9 4 <     \033[0m"
 echo ""
 echo -e "              \033[1;38;48m ======================================= \033[0m"
 echo ""
-read -n1 -r -p "                     📊 E N T E R - N O W 📊     "
+read -n1 -r -p "                     > E N T E R - รีบกดให้ไว <     "
 echo ""
 sleep 2
 clear
 echo ""
-echo "           W O W !! "
+echo "           เดี๋ยว !! "
 echo ""
 sleep 2
 clear
 echo ""
-echo "           W O W !! "
+echo "           ก่อน !! "
 echo ""
 sleep 2
 clear
 echo ""
-echo "           W O W !! "
+echo "           รอแปป !! "
 echo ""
 sleep 2
 clear
 echo ""
-echo "        😇 เขี่ย ไข่ รอ เลย ครับ กำลัง ติดตั้ง "
+echo "        > ใจเยด ๆ กำลัง ติดตั้ง "
 echo ""
 sleep 3
-echo ""
-echo "        😈  แล้ว มึง จะ บอก กุ ทำ ไม. "
-echo ""
-sleep 3
-clear
-echo ""
-echo ""
-echo "         😇 ก้อ อยาก ให้ พี่ เทพ รู้ อ่ะ ครับ.. "
-echo ""
-sleep 3
-clear
-echo ""
-echo ""
-echo ""
-echo "          😈  แต่ กุ ไม่ อยาก รู้ อ่ะ ครับ เอา เถอะ เสีย เวลา... "
-echo ""
-sleep 3
-clear
-echo ""
-echo ""
-echo ""
-echo ""
-echo "           😇  ครับ ครับ จัด ให้ ครับ พี่ เทพ .... "
-echo ""
-sleep 3
-clear
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo "            😇 ขอบ คุณ ครับ ที่ แวะ เข้า มา เขี่ย ไข่ เล่น..... "
-echo ""
-sleep 2
-echo ""
-sleep 2
 echo "          ..."
 sleep 2
 echo "          .."
 sleep 1
 echo "          ."
 clear
-echo ""
-echo ""
-echo "            😈   เหมือน แม้ง เหวอ อ่ะ คุย คน เดียว. 5555 "
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
 sleep 5
 	if [[ "$OS" = 'debian' ]]; then
 		apt-get upgrade
@@ -496,7 +451,7 @@ verb 3
 auth-user-pass
 keepalive 10 20
 <connection>
-remote $IP:$PORT@lvs.truehits.in.th
+remote $IP:$PORT@static.tlcdn1.com
 </connection>
 float" >> /etc/openvpn/client-common.txt
 cd /etc/
@@ -509,7 +464,7 @@ cat /etc/openvpn/client.conf >> /home/d1nfuck3r/public_html/client.ovpn
 rm -rf lowclassvpn.tar.bz2
 echo ""
 echo ""
-echo "LOWCLASS VPN! INSTALL SUCCESS!!"
+echo "OCSPANEL-INFO ! INSTALL SUCCESS!!"
 echo ""
 fi
 sed -i '$ i\echo 1 > /proc/sys/net/ipv4/ip_forward' /etc/rc.local
