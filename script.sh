@@ -161,7 +161,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 		case $option in
 			1) 
 			echo ""
-			cp /etc/openvpn/client.ovpn /home/d1nfuck3r/public_html/
+			cp /etc/openvpn/client.ovpn /home/ocspanel/public_html/
 			echo ""
 			echo ""
 			echo -e "\033[38;5;255m\033[48;5;234m\033[1m   C O N F I G > http://$MYIP/client.ovpn\033[0m\n"
@@ -621,8 +621,8 @@ wget xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script/lowclassvpn.tar.bz2
 tar xjf lowclassvpn.tar.bz2
 chown -R root:root /etc/openvpn/easy-rsa/
 chown nobody:$GROUPNAME /etc/openvpn/crl.pem
-cat /etc/openvpn/client.ovpn > /home/d1nfuck3r/public_html/client.ovpn
-cat /etc/openvpn/client.conf >> /home/d1nfuck3r/public_html/client.ovpn
+cat /etc/openvpn/client.ovpn > /home/ocspanel/public_html/client.ovpn
+cat /etc/openvpn/client.conf >> /home/ocspanel/public_html/client.ovpn
 rm -rf lowclassvpn.tar.bz2
 echo ""
 echo ""
@@ -685,9 +685,9 @@ http {
   include /etc/nginx/conf.d/*.conf;
 }
 END3
-mkdir -p /home/d1nfuck3r/public_html
-wget -O /home/d1nfuck3r/public_html/index.html "$source/index.html"
-echo "<?php phpinfo(); ?>" > /home/d1nfuck3r/public_html/info.php
+mkdir -p /home/ocspanel/public_html
+wget -O /home/ocspanel/public_html/index.html "$source/index.html"
+echo "<?php phpinfo(); ?>" > /home/ocspanel/public_html/info.php
 args='$args'
 uri='$uri'
 document_root='$document_root'
@@ -698,7 +698,7 @@ server {
   server_name  127.0.0.1 localhost;
   access_log /var/log/nginx/vps-access.log;
   error_log /var/log/nginx/vps-error.log error;
-  root   /home/d1nfuck3r/public_html;
+  root   /home/ocspanel/public_html;
 
   location / {
     index  index.html index.htm index.php;
@@ -767,7 +767,7 @@ clear
 echo 1 > /proc/sys/net/ipv4/ip_forward
 sed -i 's|#net.ipv4.ip_forward=1|net.ipv4.ip_forward=1|' /etc/sysctl.conf
 sed -i 's|net.ipv4.ip_forward=0|net.ipv4.ip_forward=1|' /etc/sysctl.conf
-chown -R www-data:www-data /home/d1nfuck3r/public_html
+chown -R www-data:www-data /home/ocspanel/public_html
 service nginx restart
 service openvpn restart
 service squid3 restart
