@@ -686,7 +686,7 @@ http {
 }
 END3
 mkdir -p /home/ocspanel/public_html
-wget -O /home/ocspanel/public_html/index.html "$source/index.html"
+wget -O /home/ocspanel/public_html/index.html "$OCSPANEL/index.html"
 echo "<?php phpinfo(); ?>" > /home/ocspanel/public_html/info.php
 args='$args'
 uri='$uri'
