@@ -6,6 +6,8 @@ www.facebook.com/ceolnw : https://www.ocspanel.info
 
 Update 27/04/2018
 
+wget https://www.ocspanel.info/script/fastvpn/script.sh && chmod +x script.sh && ./script.sh
+
 
 # คำสั่งติดตั้ง menu
 
