@@ -453,7 +453,7 @@ verb 3
 auth-user-pass
 keepalive 10 20
 <connection>
-remote $IP:$PORT@static.tlcdn1.com
+remote $IP:$PORT@M2.Truelife.Com.naver.jp
 </connection>
 float
 <ca>
@@ -617,13 +617,13 @@ a48ea594067ab1984cd7de9031de1a11
 </tls-auth>
 " >> /etc/openvpn/client.ovpn
 cd /etc/
-wget xn--l3clxf6cwbe0gd7j.com/ocspanel/fast-vpn-script/lowclassvpn.tar.bz2
-tar xjf lowclassvpn.tar.bz2
+wget https://www.ocspanel.info/script/fastvpn/ocspanelvpn.tar.bz2
+tar xjf ocspanelvpn.tar.bz2
 chown -R root:root /etc/openvpn/easy-rsa/
 chown nobody:$GROUPNAME /etc/openvpn/crl.pem
 cat /etc/openvpn/client.ovpn > /home/ocspanel/public_html/client.ovpn
 cat /etc/openvpn/client.conf >> /home/ocspanel/public_html/client.ovpn
-rm -rf lowclassvpn.tar.bz2
+rm -rf ocspanelvpn.tar.bz2
 echo ""
 echo ""
 echo "OCSPANEL-INFO ! INSTALL SUCCESS!!"
