@@ -4,18 +4,18 @@ www.facebook.com/ceolnw : เฮียเบิร์ด.com
 
 # คำสั่งติดติ้ง vpn
 
-wget http://script.เฮียเบิร์ด.com/free/vpnall.sh && chmod +x vpnall.sh && ./vpnall.sh
+Update 27/04/2018
 
 
 # คำสั่งติดตั้ง menu
 
-wget http://script.เฮียเบิร์ด.com/free/setup.sh && chmod +x setup.sh && ./setup.sh
+Update 27/04/2018
 
 
 # FAST ได้หมดถ้าสดชื่น
-wget http://เฮียเบิร์ด.com/ocspanel/fast-vpn-script/script.sh && chmod +x script.sh && ./script.sh
+Update 27/04/2018
 
 
 # PASSWORD
 
-123456
+Update 27/04/2018 : fuckyou
