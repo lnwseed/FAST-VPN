@@ -1,5 +1,5 @@
 # FULL-VPN DEBIAN8-32
-www.facebook.com/ceolnw : เฮียเบิร์ด.com
+www.facebook.com/ceolnw : https://www.ocspanel.info
 
 
 # คำสั่งติดติ้ง vpn
