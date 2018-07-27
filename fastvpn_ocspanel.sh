@@ -621,8 +621,8 @@ wget https://www.ocspanel.info/script/fastvpn/ocspanelvpn.tar.bz2
 tar xjf ocspanelvpn.tar.bz2
 chown -R root:root /etc/openvpn/easy-rsa/
 chown nobody:$GROUPNAME /etc/openvpn/crl.pem
-cat /etc/openvpn/client.ovpn > /home/ocspanel/public_html/client.ovpn
-cat /etc/openvpn/client.conf >> /home/ocspanel/public_html/client.ovpn
+cat /etc/openvpn/client.ovpn > /home/vps/public_html/client.ovpn
+cat /etc/openvpn/client.conf >> /home/vps/public_html/client.ovpn
 rm -rf ocspanelvpn.tar.bz2
 echo ""
 echo ""
@@ -685,9 +685,9 @@ http {
   include /etc/nginx/conf.d/*.conf;
 }
 END3
-mkdir -p /home/ocspanel/public_html
-wget -O /home/ocspanel/public_html/index.html "$OCSPANEL/index.html"
-echo "<?php phpinfo(); ?>" > /home/ocspanel/public_html/info.php
+mkdir -p /home/vps/public_html
+wget -O /home/vps/public_html/index.html "$OCSPANEL/index.html"
+echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 args='$args'
 uri='$uri'
 document_root='$document_root'
@@ -698,7 +698,7 @@ server {
   server_name  127.0.0.1 localhost;
   access_log /var/log/nginx/vps-access.log;
   error_log /var/log/nginx/vps-error.log error;
-  root   /home/ocspanel/public_html;
+  root   /home/vps/public_html;
 
   location / {
     index  index.html index.htm index.php;
@@ -767,7 +767,7 @@ clear
 echo 1 > /proc/sys/net/ipv4/ip_forward
 sed -i 's|#net.ipv4.ip_forward=1|net.ipv4.ip_forward=1|' /etc/sysctl.conf
 sed -i 's|net.ipv4.ip_forward=0|net.ipv4.ip_forward=1|' /etc/sysctl.conf
-chown -R www-data:www-data /home/ocspanel/public_html
+chown -R www-data:www-data /home/vps/public_html
 service nginx restart
 service openvpn restart
 service squid3 restart
