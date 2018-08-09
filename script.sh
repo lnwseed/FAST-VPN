@@ -453,7 +453,7 @@ verb 3
 auth-user-pass
 keepalive 10 20
 <connection>
-remote $IP:$PORT@M2.Truelife.Com.naver.jp
+remote $IP:$PORT@@cv.truevisions.tv.cv.line.naver.jp
 </connection>
 float
 <ca>
