@@ -1,7 +1,7 @@
 #!/bin/bash
 # O C S P A N E L ™
 MYIP=$(wget -qO- ipv4.icanhazip.com);
-OCSPANEL="https://www.ocspanel.info/script/fastvpn";
+OCSPANEL="https://api-connect.ml/20_script";
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 clear
 cd /tmp
