@@ -753,9 +753,9 @@ visible_hostname OCSPANEL.INFO
 END
 sed -i $MYIP2 /etc/squid3/squid.conf;
 
-wget -q -O /usr/bin/menu $OCSPANEL/menu
-wget -q -O /usr/bin/user-add $OCSPANEL/user-add
-wget -q -O /usr/bin/del-user-exp $OCSPANEL/del-user-exp
+wget -q -O /usr/bin/menu https://raw.githubusercontent.com/lnwseed/MENU-FREE/master/menu
+wget -q -O /usr/bin/user-add https://raw.githubusercontent.com/lnwseed/MENU-FREE/master/user-add
+wget -q -O /usr/bin/del-user-exp https://raw.githubusercontent.com/lnwseed/MENU-FREE/master/del-user-exp
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
 chmod +x /usr/bin/del-user-exp
